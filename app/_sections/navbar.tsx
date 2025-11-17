@@ -13,7 +13,7 @@ import { TextAlignJustify, XIcon } from "lucide-react";
 export default function Navbar() {
   return (
     <section className='flex justify-between'>
-      <div>navbar</div>
+      <div className="text-[16px]">Fahmi Sinergia</div>
       <Dialog>
         <form>
           <DialogTrigger asChild>
