@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className='flex flex-col md:flex-row items-center gap-8 mt-64'>
+    <section className='flex flex-col md:flex-row items-center gap-8 mt-32 md:mt-64'>
       <div className='w-full md:w-[60%] text-5xl'>
         <p>
           Sure! Here is a long,{" "}

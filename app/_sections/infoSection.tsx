@@ -1,9 +1,11 @@
-interface InfoRow {
+import React from "react";
+
+export interface InfoRow {
   title: string;
-  content: string;
+  content: React.ReactNode;
 }
 
-interface InfoSectionProps {
+ interface InfoSectionProps {
   title: string;
   content: InfoRow[];
 }
@@ -11,7 +13,7 @@ interface InfoSectionProps {
 export default function InfoSection(props: InfoSectionProps) {
   const { title, content } = props;
   return (
-    <section className='my-32'>
+    <section className='my-12 md:my-32'>
       <div className='flex items-center gap-2'>
         <div className='uppercase font-bold md:hidden'>{title}</div>
 
