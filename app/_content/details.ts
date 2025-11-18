@@ -2,17 +2,24 @@ import { InfoRow } from "../_sections/infoSection";
 
 const detailContent: InfoRow[] = [
   {
-    title: "detail 1",
-    content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`,
+    title: "seeking",
+    content: `Frontend developer, Fullstack developer, Flutter Developer`,
   },
   {
-    title: "detail 2",
-    content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. `,
+    title: "most recent role",
+    content: `Fullstack developer at Dikshatek Indonesia for BRI`,
+  },
+  {
+    title: "timezone",
+    content: `Western Indonesia Time (GMT +7)`,
+  },
+  {
+    title: "elsewhere",
+    content: `Github, LinkedIn`
+  },
+  {
+    title: "contact",
+    content: `fjacobalis@gmail.com, +6281296903778`,
   },
 ];
 

@@ -25,7 +25,6 @@ const skillContent: InfoRow[] = [
           <div>Tanstack Query</div>
           <div>React Hook Form</div>
           <div>Zodios</div>
-          <div>Vitest</div>
           <div>Micro Frontends</div>
           <div>Turborepo</div>
         </div>
@@ -71,6 +70,8 @@ const skillContent: InfoRow[] = [
 
         <div className='col-span-12 md:col-span-4'>
           <div>Dio</div>
+          <div>Mason</div>
+          <div>Clean Architecture</div>
         </div>
       </div>
     ),
