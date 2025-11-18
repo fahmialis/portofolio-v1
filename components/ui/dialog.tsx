@@ -1,8 +1,8 @@
 "use client";
 
-import * as React from "react";
 import * as DialogPrimitive from "@radix-ui/react-dialog";
 import { XIcon } from "lucide-react";
+import * as React from "react";
 
 import { cn } from "@/lib/utils";
 
@@ -60,7 +60,7 @@ function DialogContent({
       <DialogPrimitive.Content
         data-slot='dialog-content'
         className={cn(
-          "bg-background fixed inset-0 z-50 w-screen h-screen m-0 p-6 transition-opacity duration-300 ease-out data-[state=open]:opacity-100 data-[state=closed]:opacity-0",
+          "bg-background fixed inset-0 z-50 w-screen h-screen m-0 p-6 transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] data-[state=open]:opacity-100 data-[state=closed]:opacity-0",
           className
         )}
         {...props}
