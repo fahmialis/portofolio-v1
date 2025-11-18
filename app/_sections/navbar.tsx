@@ -10,10 +10,17 @@ import {
 import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 import { TextAlignJustify, XIcon } from "lucide-react";
 
-export default function Navbar() {
+interface NavbarProps {
+  onClick: (name: "home" | "about" | "details" | "works" | "skills") => void;
+}
+
+export default function Navbar(props: NavbarProps) {
+
+  console.log({ props })
+
   return (
     <section className='flex justify-between'>
-      <div className="text-[16px]">Fahmi Sinergia</div>
+      <div className='text-[16px]'>Fahmi Sinergia</div>
       <Dialog>
         <form>
           <DialogTrigger asChild>
@@ -26,9 +33,7 @@ export default function Navbar() {
             <VisuallyHidden>
               <DialogHeader>
                 <DialogTitle>Side bar header</DialogTitle>
-                <DialogDescription>
-                  Header for sidebar
-                </DialogDescription>
+                <DialogDescription>Header for sidebar</DialogDescription>
               </DialogHeader>
             </VisuallyHidden>
             <div className='flex justify-between w-full'>

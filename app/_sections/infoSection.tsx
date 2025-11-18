@@ -8,12 +8,13 @@ export interface InfoRow {
  interface InfoSectionProps {
   title: string;
   content: InfoRow[];
+  id: string
 }
 
 export default function InfoSection(props: InfoSectionProps) {
-  const { title, content } = props;
+  const { title, content, id } = props;
   return (
-    <section className='my-12 md:my-32'>
+    <section className='my-12 md:my-32' id={id}>
       <div className='flex items-center gap-2'>
         <div className='uppercase font-bold md:hidden'>{title}</div>
 

@@ -2,16 +2,13 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className='flex flex-col md:flex-row items-center gap-8 mt-32 md:mt-64'>
-      <div className='w-full md:w-[60%] text-5xl'>
+    <section
+      className='flex flex-col md:flex-row items-center gap-8 mt-32 md:mt-64'
+      id='home'
+    >
+      <div className='w-full md:w-[60%] text-4xl md:text-5xl'>
         <p>
-          Sure! Here is a long,{" "}
-          <strong>
-            well-written placeholder text you can use for your hero section,
-            portfo
-          </strong>
-          lio, or anywhere you need it. Just tell me if you want it to be more
-          casual, professional, funny, or shorter/longer.
+          I’m a Software Engineer with <strong>4+ years of experience</strong> across <strong>front‑end</strong>, <strong>back‑end</strong>, and <strong>mobile development</strong>, focused on building clean, accessible, and modern digital experiences.
         </p>
       </div>
 

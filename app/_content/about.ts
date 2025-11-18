@@ -2,26 +2,17 @@ import { InfoRow } from "../_sections/infoSection";
 
 const aboutContent: InfoRow[] = [
   {
-    title: "test dulu",
-    content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-        Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, 
-        nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. 
-        Donec lobortis risus a elit. Etiam tempor. Ut ullamcorper, ligula eu tempor congue, eros est euismod turpis, id tincidunt sapien risus a quam.`,
+    title: "background",
+    content:
+      "Software Engineer with 4+ years of experience across front-end, back-end, and mobile development. I’ve worked in fast-paced startup and enterprise environments, building reliable, user-focused digital products.",
   },
   {
-    title: "test lagi",
-    content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-        Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, 
-        nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. 
-        Donec lobortis risus a elit. Etiam tempor. Ut ullamcorper, ligula eu tempor congue, eros est euismod turpis, id tincidunt sapien risus a quam.`,
+    title: "motivators",
+    content: `Tackling complex engineering challenges. Building reliable, scalable solutions that align teams around a shared vision. Collaborating closely with designers, product managers, and other developers to deliver meaningful features. Empowering stakeholders through clear communication and transparent development processes. Continuously improving code quality, advocating for accessibility, and creating seamless user experiences across web and mobile applications.`,
+  },
+  {
+    title: "education",
+    content: `Hacktiv8, Industrial Engineering`,
   },
 ];
 
