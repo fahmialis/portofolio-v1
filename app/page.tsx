@@ -6,9 +6,9 @@ import InfoSection from "@/app/_sections/infoSection";
 import aboutContent from "./_content/about";
 import detailContent from "./_content/details";
 import skillContent from "./_content/skills";
-import worksContent from "./_content/works";
 import Hero from "./_sections/hero";
 import Navbar from "./_sections/navbar";
+import { ShowCase } from "./_sections/showcase";
 
 export default function Home() {
   const [page, setPage] = useState<
@@ -25,9 +25,10 @@ export default function Home() {
 
       <InfoSection title='Hard Skills' id='skills' content={skillContent} />
 
-      <InfoSection title='Works' id='works' content={worksContent} />
+      <ShowCase/>
 
       <InfoSection title='Other details' id='details' content={detailContent} />
+
     </main>
   );
 }
