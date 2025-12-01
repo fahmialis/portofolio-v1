@@ -1,60 +1,39 @@
+import { Button } from "@/components/ui/button";
 import {
-  Dialog,
-  DialogClose,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "@/components/ui/dialog";
-import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
-import { TextAlignJustify, XIcon } from "lucide-react";
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import { Moon, Sun } from "lucide-react";
+import { useTheme } from "next-themes";
 
-interface NavbarProps {
-  onClick: (name: "home" | "about" | "details" | "works" | "skills") => void;
-}
-
-export default function Navbar(props: NavbarProps) {
-
-  console.log({ props })
+export default function Navbar() {
+  const { setTheme } = useTheme();
 
   return (
-    <section className='flex justify-between'>
+    <section className='flex justify-between items-center'>
       <div className='text-[16px]'>Fahmi Sinergia</div>
-      <Dialog>
-        <form>
-          <DialogTrigger asChild>
-            <TextAlignJustify className='size-6' />
-          </DialogTrigger>
-          <DialogContent
-            className='w-screen h-screen max-w-full p-8 md:p-16 flex justify-between'
-            showCloseButton={false}
-          >
-            <VisuallyHidden>
-              <DialogHeader>
-                <DialogTitle>Side bar header</DialogTitle>
-                <DialogDescription>Header for sidebar</DialogDescription>
-              </DialogHeader>
-            </VisuallyHidden>
-            <div className='flex justify-between w-full'>
-              <div>
-                <div className='font-extrabold text-4xl'>Home</div>
-                <div className='font-extrabold text-4xl'>
-                  Works
-                  <ul className='pl-6'>
-                    <li className='list-none'>Item without 1</li>
-                    <li className='list-none'>Item without 2</li>
-                  </ul>
-                </div>
-                <div className='font-extrabold text-4xl'>Contact</div>
-              </div>
-              <DialogClose className='flex items-start h-fit'>
-                <XIcon className='size-6' />
-              </DialogClose>
-            </div>
-          </DialogContent>
-        </form>
-      </Dialog>
+      <DropdownMenu>
+        <DropdownMenuTrigger asChild>
+          <Button variant='outline' size='icon'>
+            <Sun className='h-[1.2rem] w-[1.2rem] scale-100 rotate-0 transition-all dark:scale-0 dark:-rotate-90' />
+            <Moon className='absolute h-[1.2rem] w-[1.2rem] scale-0 rotate-90 transition-all dark:scale-100 dark:rotate-0' />
+            <span className='sr-only'>Toggle theme</span>
+          </Button>
+        </DropdownMenuTrigger>
+        <DropdownMenuContent align='end'>
+          <DropdownMenuItem onClick={() => setTheme("light")}>
+            Light
+          </DropdownMenuItem>
+          <DropdownMenuItem onClick={() => setTheme("dark")}>
+            Dark
+          </DropdownMenuItem>
+          <DropdownMenuItem onClick={() => setTheme("system")}>
+            System
+          </DropdownMenuItem>
+        </DropdownMenuContent>
+      </DropdownMenu>
     </section>
   );
 }

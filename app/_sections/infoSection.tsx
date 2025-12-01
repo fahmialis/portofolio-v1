@@ -18,7 +18,7 @@ export default function InfoSection(props: InfoSectionProps) {
       <div className='flex items-center gap-2'>
         <div className='uppercase font-bold md:hidden'>{title}</div>
 
-        <hr className='flex-1 border border-black h-px' />
+        <hr className='flex-1 border border-black dark:border-white h-px' />
       </div>
 
       {content?.length > 0 &&

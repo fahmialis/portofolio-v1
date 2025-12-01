@@ -1,7 +1,5 @@
 "use client";
 
-import { useState } from "react";
-
 import InfoSection from "@/app/_sections/infoSection";
 import aboutContent from "./_content/about";
 import detailContent from "./_content/details";
@@ -11,13 +9,9 @@ import Navbar from "./_sections/navbar";
 import Works from "./_sections/works";
 
 export default function Home() {
-  const [page, setPage] = useState<
-    "home" | "about" | "details" | "works" | "skills"
-  >("about");
-
   return (
     <main className='p-8 md:p-16'>
-      <Navbar onClick={setPage} />
+      <Navbar />
 
       <Hero />
 
