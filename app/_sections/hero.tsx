@@ -13,7 +13,6 @@ export default function Hero() {
       </div>
 
       <div className='w-full md:w-[40%] '>
-        {" "}
         <Image
           className='h-64 w-full object-cover object-center'
           src='https://dummyimage.com/720x400'

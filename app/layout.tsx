@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { ThemeProvider } from "@/components/themeProvider";
+// import { ThemeProvider } from "@/components/themeProvider";
 
 // Using system font stack for body text, see tailwind.config.js for font-sans.
 
@@ -17,14 +17,14 @@ export default function RootLayout({
   return (
     <html lang='en' suppressHydrationWarning>
       <body className='antialiased font-sans'>
-        <ThemeProvider
+        {/* <ThemeProvider
           attribute='class'
-          defaultTheme='system'
+          defaultTheme='light'
           enableSystem
           disableTransitionOnChange
-        >
+        > */}
           {children}
-        </ThemeProvider>
+        {/* </ThemeProvider> */}
       </body>
     </html>
   );

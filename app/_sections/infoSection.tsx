@@ -28,7 +28,7 @@ export default function InfoSection(props: InfoSectionProps) {
               key={index}
               className='grid grid-cols-1 md:grid-cols-12 gap-4 mt-8'
             >
-              <div className='hidden md:block md:col-span-3 uppercase font-bold'>
+              <div className='hidden md:block md:col-span-3 uppercase font-bold sticky top-20'>
                 {index === 0 ? title : ""}
               </div>{" "}
               <div className='md:col-span-3 font-bold'>
