@@ -3,11 +3,11 @@ import { InfoRow } from "../_sections/infoSection";
 const detailContent: InfoRow[] = [
   {
     title: "seeking",
-    content: `Frontend developer, Fullstack developer, Flutter Developer`,
+    content: `Frontend Developer, Fullstack Developer, Flutter Developer`,
   },
   {
     title: "most recent role",
-    content: `Fullstack developer at Dikshatek Indonesia for BRI`,
+    content: `Fullstack Developer at PT Bank Rakyat Indonesia (BRI)`,
   },
   {
     title: "timezone",
