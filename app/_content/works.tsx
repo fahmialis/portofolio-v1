@@ -3,7 +3,7 @@ import {
   CarouselContent,
   CarouselItem,
 } from "@/components/ui/carousel";
-import Image from "next/image";
+import { SkeletonImage } from "@/components/ui/skeletonImage";
 import { InfoRow } from "../_sections/infoSection";
 
 const worksContent: InfoRow[] = [
@@ -46,7 +46,7 @@ const worksContent: InfoRow[] = [
                 key={index}
                 className='pl-1 md:basis-1/2 lg:basis-1/3'
               >
-                <Image
+                <SkeletonImage
                   className='h-64 w-full object-cover object-center'
                   src={path}
                   alt='alt'
@@ -97,7 +97,7 @@ const worksContent: InfoRow[] = [
                 key={index}
                 className='pl-1 md:basis-1/2 lg:basis-1/3'
               >
-                <Image
+                <SkeletonImage
                   className='h-64 w-full object-cover object-center'
                   src={path}
                   alt='alt'
@@ -143,7 +143,7 @@ const worksContent: InfoRow[] = [
                 key={index}
                 className='pl-1 md:basis-1/2 lg:basis-1/3'
               >
-                <Image
+                <SkeletonImage
                   className='h-64 w-full object-contain object-center'
                   src={path}
                   alt='alt'
@@ -193,7 +193,7 @@ const worksContent: InfoRow[] = [
                 key={index}
                 className='pl-1 md:basis-1/2 lg:basis-1/3'
               >
-                <Image
+                <SkeletonImage
                   className='h-64 w-full object-contain object-center'
                   src={path}
                   alt='alt'
