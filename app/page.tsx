@@ -7,12 +7,11 @@ import skillContent from "./_content/skills";
 import Hero from "./_sections/hero";
 import Navbar from "./_sections/navbar";
 import Works from "./_sections/works";
-import { SmoothCursor } from "@/components/ui/smooth-cursor";
 
 export default function Home() {
   return (
     <main className='p-8 md:p-16'>
-      <SmoothCursor />
+
       <Navbar />
 
       <Hero />

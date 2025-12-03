@@ -5,6 +5,10 @@ import {
 } from "@/components/ui/carousel";
 import { SkeletonImage } from "@/components/ui/skeletonImage";
 import { InfoRow } from "../_sections/infoSection";
+import {
+  ScrollVelocityContainer,
+  ScrollVelocityRow,
+} from "@/components/ui/scroll-based-velocity";
 
 const worksContent: InfoRow[] = [
   {
@@ -34,29 +38,25 @@ const worksContent: InfoRow[] = [
           </div>
         </div>
 
-        <Carousel className='w-full mb-8'>
-          <CarouselContent className='-ml-1'>
+        <ScrollVelocityContainer className='text-4xl font-bold md:text-7xl'>
+          <ScrollVelocityRow baseVelocity={5} direction={1}>
             {[
               "/super_v3_1.png",
               "/super_v3_2.png",
               "/super_v3_3.png",
               "/super_v3_4.png",
             ].map((path, index) => (
-              <CarouselItem
+              <SkeletonImage
+                className='h-64 w-full object-cover object-center pl-1'
+                src={path}
+                alt='alt'
+                width={400}
+                height={720}
                 key={index}
-                className='pl-1 md:basis-1/2 lg:basis-1/3'
-              >
-                <SkeletonImage
-                  className='h-64 w-full object-cover object-center'
-                  src={path}
-                  alt='alt'
-                  width={400}
-                  height={720}
-                />
-              </CarouselItem>
+              />
             ))}
-          </CarouselContent>
-        </Carousel>
+          </ScrollVelocityRow>
+        </ScrollVelocityContainer>
       </section>
     ),
   },
@@ -84,8 +84,8 @@ const worksContent: InfoRow[] = [
           </div>
         </div>
 
-        <Carousel className='w-full mb-8'>
-          <CarouselContent className='-ml-1'>
+        <ScrollVelocityContainer className='text-4xl font-bold md:text-7xl'>
+          <ScrollVelocityRow baseVelocity={5} direction={1}>
             {[
               "/super_v4_1.png",
               "/super_v4_2.png",
@@ -93,21 +93,17 @@ const worksContent: InfoRow[] = [
               "/super_v4_4.png",
               "/super_v4_5.png",
             ].map((path, index) => (
-              <CarouselItem
+              <SkeletonImage
+                className='h-64 w-full object-cover object-center pl-1'
+                src={path}
+                alt='alt'
+                width={400}
+                height={720}
                 key={index}
-                className='pl-1 md:basis-1/2 lg:basis-1/3'
-              >
-                <SkeletonImage
-                  className='h-64 w-full object-cover object-center'
-                  src={path}
-                  alt='alt'
-                  width={400}
-                  height={720}
-                />
-              </CarouselItem>
+              />
             ))}
-          </CarouselContent>
-        </Carousel>
+          </ScrollVelocityRow>
+        </ScrollVelocityContainer>
       </section>
     ),
   },
@@ -130,8 +126,8 @@ const worksContent: InfoRow[] = [
           </div>
         </div>
 
-        <Carousel className='w-full mb-8'>
-          <CarouselContent className='-ml-1'>
+        <ScrollVelocityContainer className='text-4xl font-bold md:text-7xl'>
+          <ScrollVelocityRow baseVelocity={5} direction={1}>
             {[
               "/storybook6.png",
               "/storybook7.png",
@@ -139,21 +135,17 @@ const worksContent: InfoRow[] = [
               "/storybook4.png",
               "/storybook5.png",
             ].map((path, index) => (
-              <CarouselItem
+              <SkeletonImage
+                className='h-64 w-full object-contain object-center pl-1'
+                src={path}
+                alt='alt'
+                width={400}
+                height={720}
                 key={index}
-                className='pl-1 md:basis-1/2 lg:basis-1/3'
-              >
-                <SkeletonImage
-                  className='h-64 w-full object-contain object-center'
-                  src={path}
-                  alt='alt'
-                  width={400}
-                  height={720}
-                />
-              </CarouselItem>
+              />
             ))}
-          </CarouselContent>
-        </Carousel>
+          </ScrollVelocityRow>
+        </ScrollVelocityContainer>
       </section>
     ),
   },
@@ -180,8 +172,8 @@ const worksContent: InfoRow[] = [
           </div>
         </div>
 
-        <Carousel className='w-full mb-8'>
-          <CarouselContent className='-ml-1'>
+        <ScrollVelocityContainer className='text-4xl font-bold md:text-7xl'>
+          <ScrollVelocityRow baseVelocity={4} direction={1}>
             {[
               "/PROCASH_1.png",
               "/PROCASH_2.png",
@@ -189,21 +181,17 @@ const worksContent: InfoRow[] = [
               "/PROCASH_4.png",
               "/PROCASH_5.png",
             ].map((path, index) => (
-              <CarouselItem
+              <SkeletonImage
+                className='h-64 w-full object-cover object-center pl-1'
+                src={path}
+                alt='alt'
+                width={400}
+                height={720}
                 key={index}
-                className='pl-1 md:basis-1/2 lg:basis-1/3'
-              >
-                <SkeletonImage
-                  className='h-64 w-full object-contain object-center'
-                  src={path}
-                  alt='alt'
-                  width={400}
-                  height={720}
-                />
-              </CarouselItem>
+              />
             ))}
-          </CarouselContent>
-        </Carousel>
+          </ScrollVelocityRow>
+        </ScrollVelocityContainer>
       </section>
     ),
   },
