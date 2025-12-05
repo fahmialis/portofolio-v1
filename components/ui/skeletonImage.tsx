@@ -1,12 +1,10 @@
 "use client";
 
-import clsx from "clsx";
 import type { ImageProps } from "next/image";
-import Image from "next/image";
 import { useState } from "react";
+import { Safari } from "./safari";
 
 export function SkeletonImage({
-  className,
   ...props
 }: ImageProps & { className?: string }) {
   const [loaded, setLoaded] = useState(false);
@@ -17,14 +15,8 @@ export function SkeletonImage({
         <div className='absolute inset-0 animate-pulse bg-gray-200 rounded-md' />
       )}
 
-      <Image
-        {...props}
-        alt={props?.alt ?? "alt"}
-        className={clsx(
-          "h-64 w-full object-contain object-center transition-opacity duration-300",
-          loaded ? "opacity-100" : "opacity-0",
-          className
-        )}
+      <Safari
+        imageSrc={props?.src as string}
         onLoadingComplete={() => setLoaded(true)}
       />
     </div>

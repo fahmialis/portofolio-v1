@@ -8,7 +8,10 @@ export default function Hero() {
     >
       <div className='w-full md:w-[60%] text-4xl md:text-5xl'>
         <p>
-          I’m a Software Engineer with <strong>4+ years of experience</strong> across <strong>front‑end</strong>, <strong>back‑end</strong>, and <strong>mobile development</strong>, focused on building clean, accessible, and modern digital experiences.
+          I’m a Software Engineer with <strong>4+ years of experience</strong>{" "}
+          across <strong>front‑end</strong>, <strong>back‑end</strong>, and{" "}
+          <strong>mobile development</strong>, focused on building clean,
+          accessible, and modern digital experiences.
         </p>
       </div>
 
